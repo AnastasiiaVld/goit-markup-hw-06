@@ -441,13 +441,17 @@ background: var(--other-color)
 }
 
 .foter-social-title {
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 14px;
     line-height: calc(16 / 14);
     width: 116px;
     margin-bottom: 20px;
     color: var(--White-color);
     text-transform: uppercase;
+}
+
+.footer-social {
+    margin-right: 93px;
 }
 
 .footer-social-link {
@@ -472,7 +476,62 @@ background: var(--other-color)
 .footer-social-icon {
    fill: var(--White-color);
 }
+
+.email-form {
+    display: flex;
+}
+
+.email-form-input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: var(--Color-grey);
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-form-input:hover,
+.email-form-input:focus {
+    border-color: var(--Color-accent);
+
+}
+
+.footer-email-group-text{
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    margin-bottom: 20px;
+    color: var(--White-color);
+    text-transform: uppercase;
+}
+
+.footer-email-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--Color-accent);
+    color: var(--White-color);
+    border: none;
+    border-radius: 4px;
+
+    margin-left: 12px;
+}
+
+.footer-email-group-svg {
+    color: var(--White-color);
+}
     
+/* .footer-email-btn:hover,
+.footer-email-btn:focus {
+    color: var(--Color-accent);
+
+} */
+
 .address-contact{
     font-size: 14px;
     color: hsla(0, 0%, 100%, 0.6);
