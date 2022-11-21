@@ -501,8 +501,8 @@ background: var(--other-color)
 
 .footer-email-group-text{
     font-weight: 700px;
-    font-size: 14px;
-    line-height: calc(16 / 14);
+    font-size: 16px;
+    line-height: calc(30 / 16);
     margin-bottom: 20px;
     color: var(--White-color);
     text-transform: uppercase;
@@ -520,17 +520,19 @@ background: var(--other-color)
     border-radius: 4px;
 
     margin-left: 12px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) ,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-email-btn:hover,
+.footer-email-btn:focus {
+    color: var(--Color-accent);
+    background-color: var(--White-color);
 }
 
 .footer-email-group-svg {
-    color: var(--White-color);
+  fill: currentColor;
+  margin-left: 10px;
 }
-    
-/* .footer-email-btn:hover,
-.footer-email-btn:focus {
-    color: var(--Color-accent);
-
-} */
 
 .address-contact{
     font-size: 14px;
@@ -684,6 +686,8 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);  
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -703,3 +707,96 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     align-items: center;
     justify-content: center;
 }
+
+.modal-form-title {
+    display: block;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    letter-spacing: 0.03em;
+}
+
+/* .modal-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 448px;
+} */
+
+.modal-form-group {
+    position: relative;
+    margin-bottom: 10px;
+    width: 448px; 
+}
+
+.modal-form-lable {
+    display: block;
+    font-size: 12px;
+    line-height: calc(12 / 14);
+    color: var(--Second-color);
+    margin-bottom: 4px;
+}
+
+.modal-form-field {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    padding-right: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    cursor: pointer;
+}
+
+.modal-form-field:focus {
+   outline: 1px solid #2196F3;
+}
+
+.modal-form-svg {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+.modal-form-field:focus + .modal-form-svg {
+    fill: var(--Color-accent);
+}
+
+.modal-form-agreement {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   gap: 16px;
+}
+
+.modal-form-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    background-image: url("data:image/svg+xml,%3Csymbol id='icon-icon' viewBox='0 0 42 32'%3E%3Cpath stroke-linejoin='miter' stroke-linecap='butt' stroke-miterlimit='4' stroke-width='0.64' d='M6.263 15.205l-0.22-0.21-3.307 3.132 11.651 11.114 24.477-23.351-3.285-3.134-21.192 20.197-8.124-7.75z'%3E%3C/path%3E%3C/symbol%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-checkbox:checked {
+    background-color: var(--Color-accent);
+    border-color: transparent;
+    background-size: 11px 8px;
+}
+
+.modal-form-link {
+    color: var(--Color-accent);
+}
+
+
+
+
+
