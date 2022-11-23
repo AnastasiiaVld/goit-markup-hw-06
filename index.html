@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header class="header">
@@ -212,7 +212,6 @@
                 </li>
               </ul>
             </li>
-
             <li class="main-team-list-item item">
               <img
                 class="main-team-img"
@@ -344,28 +343,46 @@
         <h2 class="main-section-title">Постійні клієнти</h2>
         <ul class="clients-list list">
           <li class="clients-item">
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
+            <a class="main-clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/symbol-defs.svg#icon-Logo-1"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-item">
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
+            <a class="main-clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/symbol-defs.svg#icon-Logo-2"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-item">
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
+            <a class="main-clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/symbol-defs.svg#icon-Logo-3"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-item">
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            <a class="main-clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
           </li>
           <li class="clients-item">
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
+            <a class="main-clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/symbol-defs.svg#icon-Logo-4"></use>
+              </svg>
+            </a>
           </li>
            <li class="clients-item">
-            <svg class="clients-icon" width="106" height="60">
-              <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
+            <a class="main-clients-link" href="">
+              <svg class="clients-icon" width="106" height="60">
+                <use href="./images/symbol-defs.svg#icon-Logo-5"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -419,8 +436,6 @@
             </li>
           </ul>
         </div>
-
-
   <div class="footer-email-group">
   <h3 class="footer-email-group-text">Підпишіться на розсилку</h3>
   <form class="email-form" name="email_form" autocomplete="on">
@@ -442,6 +457,8 @@
         <use href="./images/symbol-defs.svg#icon-close-black"></use>
       </svg>
     </button>
+
+    
     <strong class="modal-form-title" >Залиште свої дані, ми вам передзвонимо</strong>
     <form name="modal-form">
       <label class="modal-form-lable" for="user_name">Ім'я</label>
@@ -458,22 +475,26 @@
           <use href="./images/symbol-defs.svg#icon-tel-modal"></use>
         </svg>
       </div>
-      <label class="modal-form-lable" for="user_mail">Пошта</label>
+      <label class="modal-form-lable" for="user_email">Пошта</label>
       <div class="modal-form-group">
-        <input class="modal-form-field" type="mail" name="user_mail" id="user_mail">
+        <input class="modal-form-field" type="email" name="user_email" id="ueser_mail">
         <svg class="modal-form-svg" width="18" height="18">
           <use href="./images/symbol-defs.svg#icon-email-modal"></use>
         </svg>
       </div>
-      <label class="modal-form-lable" for="user_text">Коментар</label>
-      <div class="modal-form-group">
-        <input class="modal-form-field" type="text" name="user_text" id="user_text">
+      <label class="modal-form-lable modal-form-lable-textarea">Коментар</label>
+      <div class="modal-form-group modal-form-group-textarea">
+        <textarea class="modal-form-field modal-form-textarea" name="user_coment" placeholder="Введіть текст"></textarea>
       </div>
-      <label class="modal-form-agreement">
+      <label class="modal-form-lable-agreement" ></label>
+      <div class="modal-form-group-agreement">
         <input class="modal-form-checkbox" type="checkbox">
         <span class="modal-form-agreement-text">Погоджуюся з розсилкою та приймаю 
           <a class="modal-form-link" href="">Умови договору</a></span>
-      </label>
+      </div>
+      <div class="modal-form-group-btn">
+        <button class="modal-form-btn">Відправити</button>
+     </div>
     </form>
   </div>
 </div>
