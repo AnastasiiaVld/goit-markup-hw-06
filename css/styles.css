@@ -21,6 +21,7 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 a:visited {
@@ -635,17 +636,21 @@ background: var(--other-color)
     z-index: 2;
 }
 
-.main-goods-list-item {
+.main-goods-wrapper-overlay {
     position: relative;
     overflow: hidden;
 }
 
-.main-goods-list-item:hover,
-.main-goods-list-item:focus {
+.main-goods-link {
+    display: block;
+}
+
+.main-goods-link:hover,
+.main-goods-link:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.main-goods-list-item:hover .main-goods-overlay{
+.main-goods-link:hover .main-goods-overlay{
     transform: translateY(0);
 }
 
@@ -658,7 +663,6 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     transform: translateY(100%);
     padding: 63px 24px 173px;
     display: flex;
-    align-items: center;
     text-decoration: none;
     background: rgba(33, 150, 243, 0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -724,6 +728,11 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.modal-btn-icon:hover {
+   fill: var(--Color-accent);
 }
 
 .modal-form-title {
@@ -844,6 +853,7 @@ background-color: var(--Color-accent);
 color: var(--White-color);
 border: none;
 border-radius: 4px;
+cursor: pointer;
 
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
